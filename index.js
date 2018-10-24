@@ -11,7 +11,6 @@ const getHtml = (url) => {
   })
   .catch(function (err) {
     console.error("RP ERROR:", err)
-    return Promise.reject(err);
   });
 }
 
@@ -25,7 +24,6 @@ const getPdf = (url) => {
     return pdf;
   }).catch(function (err) {
     console.error("RP ERROR:", err)
-    return Promise.reject(err);
   });
 }
 
